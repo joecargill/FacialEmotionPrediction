@@ -122,7 +122,7 @@ def build_clf():
     global CVs
     global current_cv
     accur_lin = []
-    CVs = 5
+    CVs = 4
     for i in range(0,CVs):
         current_cv = i
         print("Making sets %s" %i) #Make sets by random sampling 80/20%

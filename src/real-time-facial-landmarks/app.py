@@ -56,6 +56,7 @@ def video_feed():
 
 
 if __name__ == "__main__":
-    #app.run(host='0.0.0.0',debug=False, port=3378)
+    #app.run(host='0.0.0.0',debug=False, port=5000)
     #app.run(debug=True)
-    socketio.run(app,host='0.0.0.0', port='3368')
+    app.config.update(TEMPLATES_AUTO_RELOAD=True)
+    socketio.run(app)#, host='0.0.0.0', port=5000)

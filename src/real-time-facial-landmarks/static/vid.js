@@ -1,55 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
 
-<meta charset="utf-8">
-<title>ReadMe - Emotion Detection</title>
-<link href='https://fonts.googleapis.com/css?family=Nobile:700,400' rel='stylesheet' type='text/css'>
-<style>
-#container {
-    width: 100%;
-    height: 100%;
-
-}
-.vidFrame {
-    width: 50%;
-    height: 100%;
-    float: left;
-}
-
-html, body {
-    height: 100%;
-    padding: 0;
-    margin: 0;
-    background-color: black;
-}
-
-
-.video-overlay {
-    position: absolute;
-    left: 0px;
-    top: 50%;
-    margin: 10px;
-    padding: 5px 5px;
-    font-size: 20px;
-    font-family: Helvetica;
-    color: #FFF;
-    background-color: rgba(50, 50, 50, 0.3);
-}
-</style>
-</head>
-
-<body>
-
-<div id="container">
-    <video class="vidFrame" autoplay="true" id="v1"></video>
-    <video class="vidFrame" autoplay="true" id="v2"></video>
-    <div class="video-overlay" id="vi">Working...</div>
-</div>
-
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
-    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/socket.io/1.3.5/socket.io.min.js"></script>
-<script type="text/javascript" charset="utf-8">
     var v1 = document.querySelector("#v1");
     var v2 = document.querySelector("#v2");
 
@@ -107,7 +56,3 @@ html, body {
 
     send_frame();
     setInterval(send_frame,3000);
-
-</script>
-</body>
-</html>
